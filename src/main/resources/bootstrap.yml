@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          defaultLabel: main
+          uri: https://github.com/tomasirm/cloud-config-server
+          searchPaths: config-data
