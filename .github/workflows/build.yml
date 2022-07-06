@@ -22,7 +22,6 @@ jobs:
       - name: Maven Verify
         run: mvn -B clean verify -Pintegration-test
 
-
   docker:
     name: Publish - Docker Hub
     runs-on: ubuntu-18.04
